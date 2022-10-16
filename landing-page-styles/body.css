@@ -1,0 +1,17 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}

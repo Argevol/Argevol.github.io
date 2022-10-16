@@ -1,0 +1,435 @@
+.news{
+    height: 850px;
+    background-color: #BABBCD;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+  
+.news-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.news-upper-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-section-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 87px;
+    margin-left: 70px;
+    margin-bottom: 42px;
+}
+
+.newspaper{
+    width: 56px;
+    height: 56px;
+}
+
+.news-section-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 29px;
+}
+
+.horizontal-line{
+    border-top: 3px solid black;
+    width: 1779px;
+    align-self: center;
+}
+
+.news-wheel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-color: #121A2B;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: opacity, 0.15s;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    opacity: 0.92;
+}
+
+.arrow:active{
+    opacity: 0.85;
+}
+
+.news-columns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 76px;
+    margin-bottom: 80px;
+}
+
+.news-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.news-short-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-news{
+    position: absolute;
+    right: 42%;
+    top: 10%;
+}
+
+.short-info-title{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-align-last: center;
+    top: 50%;
+    transition: font-size, 0.15s;
+}
+
+.short-info-title:hover{
+    font-size: 46px;
+}
+
+.news-full-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 200px;
+    background: #121A2B;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.full-info-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.information{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px; 
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.learn-more{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.details{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: font-size, 0.15s;
+}
+
+.details:hover{
+    font-size: 19px;
+}
+
+.learn-more-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    margin-left: 6px;
+    transition: background-color, 0.15s;
+    transition: filter, 0.15s;
+}
+
+.learn-more-arrow{
+    width: 20px;
+    height: 20px;
+}
+
+.learn-more-button:hover{
+    cursor: pointer;
+    background-color: #DEDEDF;
+}
+
+#learn-more-button:hover > #learn-more-arrow{
+    filter: brightness(0) invert(0);
+}
+
+@media (max-width: 400px) {
+    .news{
+        height: 348px;
+        background-color: #BABBCD;
+    }
+    
+    .container{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+      
+    .news-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .news-upper-part{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .news-section-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 42px;
+        margin-bottom: 17px;
+    }
+    
+    .newspaper{
+        width: 29px;
+        height: 29px;
+    }
+    
+    .news-section-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 25px;
+        color: #000000;
+        text-shadow: 0px 2.06311px 2.06311px rgba(0, 0, 0, 0.25);
+        margin-left: 15px;
+    }
+    
+    .horizontal-line{
+        border-top: 3px solid black;
+        width: 312px;
+        align-self: center;
+    }
+    
+    .news-wheel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: #121A2B;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: opacity, 0.15s;
+    }
+    
+    .arrow:hover{
+        cursor: pointer;
+        opacity: 0.92;
+    }
+    
+    .arrow:active{
+        opacity: 0.85;
+    }
+
+    .left-arrow, .right-arrow{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .news-columns{
+        display: flex;
+        flex-direction: row;
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .news-column{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #column-2, #column-3{
+        display: none;
+    }
+    
+    .news-short-info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-news{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        right: 42%;
+        top: 10%;
+    }
+    
+    .short-info-title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        text-align-last: center;
+        top: 50%;
+        transition: font-size, 0.15s;
+    }
+    
+    .short-info-title:hover{
+        font-size: 20px;
+    }
+
+    .news-background{
+        width: 210px;
+        height: 126px;
+    }
+    
+    .news-full-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 210px;
+        height: 85px;
+        background: #121A2B;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    .full-info-title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 9px;
+        line-height: 10px;
+        color: #FFFFFF;        
+        margin-top: 3px;
+        margin-left: 12px;
+    }
+    
+    .information{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 10px;
+        color: #FFFFFF;
+        margin-left: 12px;
+    }
+    
+    .learn-more{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .details{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        line-height: 10px;
+        color: #FFFFFF;
+        transition: font-size, 0.15s;
+    }
+    
+    .details:hover{
+        font-size: 8px;
+    }
+    
+    .learn-more-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        transition: background-color, 0.15s;
+        transition: filter, 0.15s;
+    }
+    
+    .learn-more-arrow{
+        width: 8px;
+        height: 8px;
+    }
+    
+    .learn-more-button:hover{
+        cursor: pointer;
+        background-color: #DEDEDF;
+    }
+    
+    #learn-more-button:hover > #learn-more-arrow{
+        filter: brightness(0) invert(0);
+    }
+}

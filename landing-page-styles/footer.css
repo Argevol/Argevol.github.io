@@ -1,0 +1,349 @@
+.footer{
+    height: 230px;
+    background-color: #050716;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 197px;
+    height: 197px;
+}
+
+.nav-useful-information, .nav-cinema-information{
+    margin-top: 25px;
+}
+
+.dropdown-useful-information, .dropdown-cinema-information{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav-useful-information-title, .nav-cinema-information-title{
+    margin-bottom: 25px;
+}
+
+.nav-useful-information-links, .nav-cinema-information-links{
+    margin-bottom: 18px;
+}
+
+.menu-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    transition: font-size, 0.15s;
+}
+
+.menu-title:hover{
+    font-size: 22px;
+}
+
+.menu-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #B3B3B4;
+    margin-bottom: 18px;
+    text-decoration: none;
+    transition: font-size, 0.15s;
+}
+
+.menu-link:hover{
+    font-size: 21px;
+}
+
+.socials-and-form, .socials, .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.social-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-button-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: width, 0.15s;
+    transition: heigh, 0.15s;
+}
+
+.social-button-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: width, 0.15s;
+    transition: heigh, 0.15s;
+}
+
+.telegram-icon, .instagram-icon, .facebook-icon{
+    width: 27px;
+    height: 27px;
+}
+
+.social-button-round:hover, .social-button-square:hover{
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+}
+
+.form-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 182px;
+    height: 41px;
+    background: #1A263F;
+    border-radius: 8px;
+    border: none;
+    transition: background-color, 0.3s;
+    transition: color, 0.3;
+}
+
+.form-button:hover{
+    cursor: pointer;
+    background-color: #DEDEDF;
+    color: #1F2B45;
+}
+
+@media (max-width: 400px) {
+    .footer{
+        height: 96px;
+        background-color: #050716;
+    }
+    
+    .container{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .footer-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footer-logo{
+        display: none;
+    }
+    
+    .nav-useful-information, .nav-cinema-information, .socials-and-form{
+        margin-top: 6px;
+    }
+    
+    .dropdown-useful-information, .dropdown-cinema-information{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .nav-useful-information-title, .nav-cinema-information-title{
+        margin-bottom: 4px;
+    }
+    
+    .nav-useful-information-links, .nav-cinema-information-links{
+        margin-bottom: 2px;
+    }
+    
+    .menu-title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase; 
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: font-size, 0.15s;
+    }
+    
+    .menu-title:hover{
+        font-size: 12px;
+    }
+    
+    .menu-link{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 9px;
+        text-transform: uppercase;
+        color: #B3B3B4;
+        text-decoration: none;
+        transition: font-size, 0.15s;
+    }
+    
+    .menu-link:hover{
+        font-size: 10px;
+    }
+    
+    .socials-and-form, .socials, .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .socials-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 8px;
+        text-transform: uppercase;   
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+    
+    .social-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .social-button-round{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        border: none;
+        margin-left: 7px;
+        margin-right: 7px;
+        transition: width, 0.15s;
+        transition: heigh, 0.15s;
+    }
+    
+    .social-button-square{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30%;
+        width: 16px;
+        height: 16px;
+        border: none;
+        margin-left: 7px;
+        margin-right: 7px;
+        transition: width, 0.15s;
+        transition: heigh, 0.15s;
+    }
+    
+    .telegram-icon, .instagram-icon, .facebook-icon{
+        width: 12px;
+        height: 12px;
+    }
+    
+    .social-button-round:hover, .social-button-square:hover{
+        cursor: pointer;
+        height: 19px;
+        width: 19px;
+    }
+    
+    .form-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 8px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .form-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        width: 80px;
+        height: 20px;
+        background: #1A263F;
+        border-radius: 3px;
+        border: none;
+        transition: background-color, 0.3s;
+        transition: color, 0.3;
+    }
+    
+    .form-button:active{
+        cursor: pointer;
+        background-color: #DEDEDF;
+        color: #1F2B45;
+    }
+}

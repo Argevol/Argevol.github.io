@@ -1,0 +1,347 @@
+.header {
+  background-color: #0f101d;
+  height: 112px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(15, 13, 41, 0.8);
+  width: 435px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 190px;
+  height: 112px;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1151px;
+}
+
+.dropdown {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-text {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  padding: 10px 19px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity, 0.15s;
+  transition: font-size, 0.3s;
+}
+
+.menu-text:hover{
+  cursor: pointer;
+  color: #39BEE8;
+  opacity: 0.75;
+  font-size: 28px;
+}
+
+.menu-text:active{
+  opacity: 0.9;
+}
+
+.search > * {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.search {
+  position: relative;
+}
+
+.search-bar {
+  background-color: transparent;
+  width: 164px;
+  height: 45px;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding-left: 22px;
+}
+
+.search-bar::placeholder {
+  color: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  width: 26px;
+  height: 27px;
+  top: 12px;
+  right: 20px;
+}
+
+.bell-icon {
+  width: 82px;
+  height: auto;
+  transition: width, 0.15s;
+  transition: height, 0.15s;
+}
+
+.bell-icon:hover{
+  cursor: pointer;
+  width: 92px;
+  height: auto;
+}
+
+.account-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(15, 13, 41, 0.8);
+  width: 340px;
+  height: 112px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.anonymus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-text {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: font-size, 0.3s;
+}
+
+.account-text:hover{
+  font-size: 22px;
+}
+
+.line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.account-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 80px;
+  height: 75px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color, 0.15s;
+  transition: opacity, 0.15s;
+}
+
+.account-button:hover{
+  cursor: pointer;
+  background-color: #1A263F;
+}
+
+.account-icon {
+  width: 39px;
+  height: 65px;
+}
+
+@media (max-width: 400px) {
+  .header {
+    background-color: #0f101d;
+    height: 60px;
+  }
+  
+  .container{
+    width: 100%;  
+    margin: 0 auto;
+  }
+  
+  .header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+  
+  .logo {
+    width: 101px;
+    height: 60px;
+  }
+  
+  .menu-icon{
+   display: flex;
+   order: 1;
+  }
+  
+  .nav-section {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .dropdown {
+    display: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-text {
+    display: none;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding: 10px 19px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity, 0.15s;
+    transition: font-size, 0.3s;
+  }
+  
+  .menu-text:hover{
+    cursor: pointer;
+    color: #39BEE8;
+    opacity: 0.75;
+    font-size: 28px;
+  }
+  
+  .menu-text:active{
+    opacity: 0.9;
+  }
+  
+  .search > * {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  
+  .search {
+    position: relative;
+  }
+  
+  .search-bar {
+    background-color: transparent;
+    width: 164px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    padding-left: 22px;
+  }
+  
+  .search-bar::placeholder {
+    color: #ffffff;
+  }
+  
+  .search-icon {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    top: 12px;
+    right: 20px;
+  }
+  
+  .bell-icon {
+    display: inline-block;
+    width: 82px;
+    height: auto;
+    transition: width, 0.15s;
+    transition: height, 0.15s;
+  }
+  
+  .bell-icon:hover{
+    cursor: pointer;
+    width: 92px;
+    height: auto;
+  }
+  
+  .account-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      rgba(15, 13, 41, 0.8);
+    width: 340px;
+    height: 112px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    order: 3;
+  }
+  
+  .account-text, .line {
+    display: none;
+  }
+  
+  .account-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 80px;
+    height: 75px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition: background-color, 0.15s;
+    transition: opacity, 0.15s;
+  }
+  
+  .account-button:hover{
+    cursor: pointer;
+    background-color: #1A263F;
+  }
+  
+  .account-icon {
+    width: 39px;
+    height: 65px;
+  }
+}

@@ -1,0 +1,359 @@
+.main-poster {
+  height: 954px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.poster-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.help-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 129px;
+  background-color: #121a2b;
+}
+
+.help-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hashtag {
+  width: 348px;
+  height: 39px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+  margin-left: 50px;
+  text-decoration: none;
+  transition: font-size, 0.15s;
+}
+
+.hashtag:hover{
+  font-size: 36px;
+  color: #39BEE8;
+  opacity: 0.9;
+}
+
+.support-text {
+  text-decoration: none;
+}
+
+.support-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  width: 608px;
+  height: 75px;
+  background-color: transparent;
+  border: 2px solid rgba(54, 63, 112, 1);
+  border-radius: 44px;
+  transition: background-color, 0.15;
+  transition: font-size, 0.15s;
+  transition: border-color, 0.15s;
+}
+
+.support-button:hover{
+  cursor: pointer;
+  background-color: #1A263F;
+  font-size: 24px;
+  border-color: #ffffff;
+}
+
+.poster{
+  position: relative;
+  width: 100%;
+  height: 788px;
+}
+
+.poster-photo {
+  width: 100%;
+  height: 788px;
+  object-fit: cover;
+}
+
+.poster-fog {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(29, 41, 67, 0) 0%,
+    rgba(16, 26, 48, 0.6038) 47.71%,
+    rgba(21, 32, 55, 0.9) 100%
+  );
+  width: 100%;
+  height: 346px;
+}
+
+.film-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.film-name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 85px;
+  text-transform: capitalize;
+  color: #ffffff;
+  align-self: center;
+}
+
+.poster-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.left-arrow-poster, .right-arrow-poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 35%;
+  background-color: transparent;
+  border: none;
+}
+
+.left-arrow-poster:hover, .right-arrow-poster:hover{
+  cursor: pointer;
+  background: #121A2B;
+  border: solid #DEDEDF 2px;
+}
+
+.circle-button {
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: width, 0.15s;
+  transition: height, 0.15s;
+  transition: border, 0.15s;
+}
+
+.circle-button:hover{
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border: 4px solid #344081;
+}
+
+.poster-lower-partition {
+  background: #121a2b;
+  width: 100%;
+  height: 37px;
+}
+
+@media (max-width: 400px) {
+  .main-poster {
+    height: 954px;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .poster-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .help-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 129px;
+    background-color: #121a2b;
+  }
+  
+  .help-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .hashtag {
+    width: 348px;
+    height: 39px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: font-size, 0.15s;
+  }
+  
+  .hashtag:hover{
+    font-size: 36px;
+    color: #39BEE8;
+    opacity: 0.9;
+  }
+  
+  .support-text {
+    text-decoration: none;
+  }
+  
+  .support-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+    width: 608px;
+    height: 75px;
+    background-color: transparent;
+    border: 2px solid rgba(54, 63, 112, 1);
+    border-radius: 44px;
+    transition: background-color, 0.15;
+    transition: font-size, 0.15s;
+    transition: border-color, 0.15s;
+  }
+  
+  .support-button:hover{
+    cursor: pointer;
+    background-color: #1A263F;
+    font-size: 24px;
+    border-color: #ffffff;
+  }
+  
+  .poster{
+    position: relative;
+    width: 100%;
+    height: 788px;
+  }
+  
+  .poster-photo {
+    width: 100%;
+    height: 788px;
+    object-fit: cover;
+  }
+  
+  .poster-fog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0px;
+    bottom: 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(29, 41, 67, 0) 0%,
+      rgba(16, 26, 48, 0.6038) 47.71%,
+      rgba(21, 32, 55, 0.9) 100%
+    );
+    width: 100%;
+    height: 346px;
+  }
+  
+  .film-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .film-name {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 85px;
+    text-transform: capitalize;
+    color: #ffffff;
+    align-self: center;
+  }
+  
+  .poster-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .left-arrow-poster, .right-arrow-poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 35%;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .left-arrow-poster:hover, .right-arrow-poster:hover{
+    cursor: pointer;
+    background: #121A2B;
+    border: solid #DEDEDF 2px;
+  }
+  
+  .circle-button {
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: width, 0.15s;
+    transition: height, 0.15s;
+    transition: border, 0.15s;
+  }
+  
+  .circle-button:hover{
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: 4px solid #344081;
+  }
+  
+  .poster-lower-partition {
+    background: #121a2b;
+    width: 100%;
+    height: 37px;
+  }
+}

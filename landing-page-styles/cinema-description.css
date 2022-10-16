@@ -1,0 +1,377 @@
+.cinema-description{
+    height: 1081px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+  
+.cinema-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-partition, .lower-partition{
+    background-color: #050716;
+    width: 100%;
+    height: 40px;
+}
+
+.upper-description-part{
+    position: relative;
+    height: 505px;
+}
+
+.background-photo{
+    width: 100%;
+    height: 505px;
+    object-fit: cover;
+}
+
+.upper-fog{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 505px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(18, 26, 43, 0.7) 0%, rgba(18, 26, 43, 0.7) 50%, rgba(18, 26, 43, 0.7) 100%);
+}
+
+.left-circles{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+}
+
+.main-circle{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.logo-circle{
+    position: absolute;
+    right: -5%;
+    top: -8%;
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 77px;
+}
+
+.upper-title{
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.upper-text{
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.inner-lowercase-text{
+    text-transform: lowercase;
+}
+
+.cinema-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize; 
+    color: #FFFFFF;
+    width: 282px;
+    height: 64px;
+    background: #1A263F;
+    border-radius: 5px;
+    border: none;
+    transition: background-color, 0.3s;
+    transition: color, 0.3;
+}
+
+.cinema-button:hover{
+    cursor: pointer;
+    background-color: #DEDEDF;
+    color: #1F2B45;
+}
+
+.cinema-button-text{
+    text-decoration: none;
+}
+
+.lower-description-part{
+    position: relative;
+    height: 505px
+}
+
+.lower-fog{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 505px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(18, 26, 43, 0.7) 0%, rgba(18, 26, 43, 0.7) 50%, rgba(18, 26, 43, 0.7) 100%);
+}
+
+.left-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 190px;
+}
+
+.lower-title{
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.bonus{
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF; 
+}
+
+.benefits{
+    margin-bottom: 24px;
+}
+
+.right-circle{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 140px;
+}
+
+@media (max-width: 400px) {
+    .cinema-description{
+        height: 1081px;
+    }
+    
+    .container{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+      
+    .cinema-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upper-partition, .lower-partition{
+        background-color: #050716;
+        width: 100%;
+        height: 27px;
+    }
+    
+    .upper-description-part{
+        position: relative;
+        height: 368px;
+    }
+    
+    .background-photo{
+        width: 100%;
+        height: 368px;
+        object-fit: cover;
+    }
+    
+    .upper-fog{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 368px;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg, rgba(18, 26, 43, 0.7) 0%, rgba(18, 26, 43, 0.7) 50%, rgba(18, 26, 43, 0.7) 100%);
+    }
+    
+    .left-circles{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    .main-circle{
+        border-radius: 50%;
+        width: 166px;
+        height: 166px;
+        object-fit: cover;
+    }
+    
+    .logo-circle{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .right-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    
+    .upper-title{
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+    }
+    
+    .upper-text{
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+    }
+    
+    .cinema-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        width: 100px;
+        height: 23px;
+        background: #1A263F;
+        border-radius: 2px;
+        border: none;
+        transition: background-color, 0.3s;
+        transition: color, 0.3;
+    }
+    
+    .cinema-button:hover{
+        cursor: pointer;
+        background-color: #DEDEDF;
+        color: #1F2B45;
+    }
+    
+    .cinema-button-text{
+        text-decoration: none;
+    }
+    
+    .lower-description-part{
+        position: relative;
+        height: 368px
+    }
+    
+    .lower-fog{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 368px;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg, rgba(18, 26, 43, 0.7) 0%, rgba(18, 26, 43, 0.7) 50%, rgba(18, 26, 43, 0.7) 100%);
+    }
+    
+    .left-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        order: 2;
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-right: 35px;
+    }
+    
+    .lower-title{
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+    }
+    
+    .bonus{
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    
+    .benefits{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    
+    .right-circle{
+        border-radius: 50%;
+        width: 166px;
+        height: 166px;
+        object-fit: cover;
+        order: 1;
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+}
