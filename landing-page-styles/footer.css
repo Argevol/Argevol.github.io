@@ -254,6 +254,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    .socials-and-form{
+        margin-right: 15px;
+    }
     
     .socials-text{
         font-family: 'Montserrat';

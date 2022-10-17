@@ -406,7 +406,7 @@
 
 @media (max-width: 400px) {
     .movie-sessions{
-        height: 1324px;
+        height: 100%;
     }
     
     .container{
@@ -423,7 +423,7 @@
     .upper-partition, .lower-partition{
         background-color: #050716;
         width: 100%;
-        height: 40px;
+        height: 27px;
     }
     
     .session{
@@ -431,7 +431,7 @@
         flex-direction: column;
         background-color: #BABBCD;
         width: 100%;
-        height: 1280px;
+        height: 100%;
     }
     
     .upper-session-part{
@@ -443,28 +443,30 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 26px;
-        margin-left: 70px;
+        margin-left: 45px;
     }
     
     .movie-section-text{
-        width: 229px;
-        height: 42px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 800;
-        font-size: 34.741px;
-        line-height: 42px;
+        font-size: 18px;
         color: #000000;
-        text-shadow: 0px 4.30551px 4.30551px rgba(0, 0, 0, 0.25);
-        margin-left: 18px;
+        text-shadow: 0px 2.24189px 2.24189px rgba(0, 0, 0, 0.25);
+        margin-left: 10px;
+    }
+
+    .camera{
+        width: 30px;
+        height: 30px;
     }
     
     .filtration{
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 12px;
     }
     
     .date-button{
@@ -472,11 +474,11 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        border: 2px solid #26272C;
-        border-radius: 12.5px;
-        width: 263px;
-        height: 39px;
-        margin-left: 70px;
+        border: 1.5px solid #26272C;
+        border-radius: 6.5px;
+        width: 136px;
+        height: 20px;
+        margin-left: 45px;
         transition: background-color, 0.15s;
         transition: filter, 0.15s;
         transition: color, 0.15s;
@@ -500,32 +502,37 @@
     }
     
     .calendar{
-        margin-right: 4px;
+        width: 21px;
+        height: 16px;
     }
     
     .date-button-text{
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 600;
-        font-size: 25px;
-        line-height: 34px;
+        font-size: 12px;
+        line-height: 17px;
         text-transform: uppercase;
-        color: #26272C;
-        margin-right: 2px;
+        color: #000000;
     }
     
+    .menu-arrow{
+        width: 18px;
+        height: 12px;
+    }
+
     .filter-button{
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 227px;
-        height: 41px;
+        width: 106px;
+        height: 22px;
         background: #26272C;
-        border-radius: 12.5px;
+        border-radius: 6.5px;
         border: none;
-        margin-right: 70px;
+        margin-right: 45px;
         transition: background-color, 0.15s;
         transition: color, 0.15s;
         transition: border, 0.15s;
@@ -540,14 +547,16 @@
     
     .sitting-raven{
         position: absolute;
-        left: -5%;  
-        top: -225%;
+        top: -165%;
+        left: 0%;
+        width: 57px;
+        height: 47px;
     }
     
     #filter-button:hover > #sitting-raven{
         position: absolute;
-        left: -5%;
-        top: -255%;
+        top: -210%;
+        left: 0%;
     }
     
     #filter-button:hover > .filter-button-text{
@@ -562,10 +571,15 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 12px;
+        line-height: 15px;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+
+    .filter-icon{
+        width: 14px;
+        height: 14px;
     }
     
     .lower-sessions-part{
@@ -576,15 +590,16 @@
     
     .upper-line{
         border-top: 3px solid black;
-        width: 1779px;
+        width: 311px;
         margin-top: 26px;
         margin-bottom: 8px;
     }
     
     .lower-line{
         border-top: 3px solid black;
-        width: 1779px;
+        width: 311px;
         margin-top: 6px;
+        margin-bottom: 18px;
     }
     
     .movies-with-side-lines{
@@ -596,13 +611,13 @@
     
     .left-line{
         border-left: 3px solid black;
-        height: 1013px;
+        height: 1718px;
         margin-left: 22px;
     }
     
     .right-line{
         border-left: 3px solid black;
-        height: 1013px;
+        height: 1718px;
         margin-right: 22px;
     }
     
@@ -618,19 +633,19 @@
         justify-content: space-between;
         align-items: center;
         background-color: #121A2B;
-        box-shadow: 0px 8px 10px rgba(96, 95, 140, 0.25);
-        border-radius: 30px;
-        width: 580px;
-        height: 496px;
-        margin: 14px;
+        box-shadow: 0px 4.28795px 5.35994px rgba(96, 95, 140, 0.25);
+        border-radius: 16px;
+        width: 311px;
+        height: 267px;
+        margin: 12px;
     }
     
     .poster-image{
-        filter: drop-shadow(0px 6px 4px rgba(96, 95, 140, 0.25));
-        border-radius: 30px;
-        width: 278px;
-        height: 438px;
-        margin-left: 14px;
+        filter: drop-shadow(0px 3.21596px 2.14398px rgba(96, 95, 140, 0.25));
+        border-radius: 16px;
+        width: 149px;
+        height: 236px;
+        margin-left: 8px;
         object-fit: cover;
         transition: width, 0.15s;
         transition: height, 0.15s;
@@ -638,8 +653,8 @@
     
     .poster-image:hover{
         cursor: pointer;
-        width: 285px;
-        height: 447px;
+        width: 155px;
+        height: 242px;
     }
     
     .movie-description{
@@ -647,32 +662,31 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 438px;
-        width: 265px;
+        width: 149px;
+        height: 236px;
+        margin-left: 8px;
     }
     
     .movie-title{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 12.8639px;
+        line-height: 16px;
         text-transform: capitalize;
         color: #FFFFFF;
-        margin-top: 20px;
-        margin-bottom: 33px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     
     .display-format{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 12.8736px;
+        line-height: 16px;
         text-transform: capitalize;
         color: #FFFFFF;
-        margin-top: 2px;
-        margin-bottom: 33px;
     }
     
     .additional-info{
@@ -686,8 +700,8 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 11px;
+        line-height: 13px;
         text-transform: capitalize;
         color: #FFFFFF;
         margin-right: 19px;
@@ -697,10 +711,9 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 12px;
         text-transform: capitalize;
-        text-align-last: right;
         color: #F2F2F2;
     }
     
@@ -708,26 +721,26 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     .date{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: capitalize; 
+        font-size: 9px;
+        line-height: 10px;
+        text-transform: capitalize;
         color: #FFFFFF;
-        margin-right: 48px;
+        margin-right: 12px;
     }
     
     .duration{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 9px;
+        line-height: 10px;
         text-transform: uppercase;
         color: #F2F2F2;
     }
@@ -736,7 +749,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: 8px;
     }
     
     .session-button{
@@ -745,13 +758,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        width: 115px;
-        height: 70px;  
+        width: 59px;
+        height: 34px;  
         background-color: #DDDDDD;
-        border-radius: 20px;
+        border-radius: 10px;
         border: none;
-        margin-top: 16px;
-        margin-right: 14px;
+        margin-top: 8px;
+        margin-right: 10px;
         transition: width, 0.15s;
         transition: height, 0.15s;
     }
@@ -764,6 +777,8 @@
     
     .threeD, .discount{
         position: absolute;
+        width: 13px;
+        height: 13px;
         right: -5%;
         top: -15%;
     }
@@ -772,32 +787,31 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 800;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 11px;
+        line-height: 14px;
         text-transform: capitalize;
-        color: #000000; 
+        color: #000000;
     }
     
     .price{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 7.25047px;
+        line-height: 9px;
         text-transform: capitalize;
         color: #000000;
-        margin-top: 5px;
-        margin-right: 6px;
+        margin-right: 4px;
     }
     
     .old-price{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 7px;
+        line-height: 9px;
         text-decoration-line: line-through;
-        text-transform: capitalize; 
+        text-transform: capitalize;
         color: #000000;
     }
     
@@ -805,8 +819,8 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 6px;
+        line-height: 8px;
         text-transform: lowercase;
         color: #373131;
     }    

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Maksym Danyliuk" />
     <meta name="description" content="Raven Cinema website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raven Cinema</title>
     <link rel="icon" href="icons/favicon.png" type="image/x-icon" />
     <link
@@ -13,7 +14,7 @@
     />
   </head>
   <body>
-    <!-- <header id="header-section" class="header">
+    <header id="header-section" class="header">
       <div class="container">
         <div class="header-wrapper">
           <div class="logo-section">
@@ -22,7 +23,13 @@
             </a>
           </div>
           <div class="nav-section">
+            <input type="checkbox" id="toggle">
             <nav class="menu-nav">
+              <label class="navbar-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </label>
               <ul class="dropdown">
                 <li class="nav-menu-list">
                   <a class="menu-text" href="#poster-section">Скоро</a>
@@ -63,14 +70,14 @@
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section id="poster-section" class="main-poster">
+      <section id="poster-section" class="main-poster">
         <div class="container">
           <div class="poster-wrapper">
             <div class="help-background">
               <div class="help-part">
-                <img src="icons/heart.svg" alt="heart" />
+                <img class="heart" src="icons/heart.svg" alt="heart" />
                 <a class="hashtag" href="https://standwithukraine.live/">#StandWithUkraine</a>
               </div>
               <form class="support-text" action="https://u24.gov.ua/" method="get">
@@ -92,7 +99,7 @@
                   </span>
                   <nav class="poster-navigation">
                     <button class="left-arrow-poster">
-                      <img src="icons/left-arrow.svg" alt="left-arrow" />
+                      <img class="left-arrow-poster-img" src="icons/left-arrow.svg" alt="left-arrow" />
                     </button>
                     <div class="selected-movie">
                       <button class="circle-button"></button>
@@ -100,7 +107,7 @@
                       <button class="circle-button"></button>
                     </div>
                     <button class="right-arrow-poster">
-                      <img src="icons/right-arrow.svg" alt="right-arrow" />
+                      <img class="right-arrow-poster-img" src="icons/right-arrow.svg" alt="right-arrow" />
                     </button>
                   </nav>
                 </div>
@@ -109,8 +116,8 @@
             <div class="poster-lower-partition"></div>
           </div>
         </div>
-      </section> -->
-      <!-- <section id="movies-section" class="movie-sessions">
+      </section>
+      <section id="movies-section" class="movie-sessions">
         <div class="container">
           <div class="movies-wrapper">
             <div class="upper-partition"></div>
@@ -377,7 +384,7 @@
             <div class="lower-partition"></div>
           </div>
         </div>
-      </section> -->
+      </section>
           <section id="cinema-section" class="cinema-description">
             <div class="container">
               <div class="cinema-wrapper">

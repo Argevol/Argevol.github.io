@@ -30,7 +30,7 @@
   height: 112px;
 }
 
-.menu-icon{
+#toggle{
   display: none;
 }
 
@@ -190,7 +190,9 @@
   }
   
   .container{
-    width: 100%;  
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
     margin: 0 auto;
   }
   
@@ -199,149 +201,150 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    width: 100%;
   }
   
   .logo-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background: none;
+    height: 100%;
+    width: 100%;
     order: 2;
   }
   
   .logo {
     width: 101px;
-    height: 60px;
-  }
-  
-  .menu-icon{
-   display: flex;
-   order: 1;
+    height: 100%;
   }
   
   .nav-section {
-    display: none;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    order: 1;
   }
   
   .dropdown {
-    display: none;
-    font-family: "Montserrat";
+    display: grid;
+    position: absolute;
+    padding: 0, 5px;
+    transition: 0.3s;
+    background: #0f101d;
+    top: 220px;
+    left: 0px;
+
+    z-index: -1;
+    transition: 0.6s;
+  }
+
+  .nav-menu-list{
+   padding-left: 5px
+  }
+
+  .menu-text{
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-text {
-    display: none;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: uppercase;
-    padding: 10px 19px;
-    color: #ffffff;
-    text-decoration: none;
-    transition: opacity, 0.15s;
-    transition: font-size, 0.3s;
-  }
-  
-  .menu-text:hover{
-    cursor: pointer;
-    color: #39BEE8;
-    opacity: 0.75;
-    font-size: 28px;
-  }
-  
-  .menu-text:active{
-    opacity: 0.9;
-  }
-  
-  .search > * {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 12px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #FFFFFF;
   }
-  
-  .search {
-    position: relative;
+
+  .navbar-toggler{
+    display: grid !important;
+    height: min-content;
+    margin: 18px -5px 0 0;
+    cursor: pointer;
+  }
+
+  .navbar-toggler .bar{
+    width: 40px;
+    height: 3px;
+    margin-bottom: 8px;
+    background: white;
+    border-radius: 10%;
+    transition: 0.4s;
+  }
+
+  #toggle{
+    display: none;
+  }
+
+  #toggle:checked ~ .dropdown{
+    transform: translateY(0);
+  }
+
+  #toggle:checked ~ .navbar-toggler{
+    margin-top: 35px;
+  }
+
+  #toggle:checked ~ .navbar-toggler .bar:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  #toggle:checked ~ .navbar-toggler .bar:nth-child(2){
+    display: none;
+  }
+
+  #toggle:checked ~ .navbar-toggler .bar:nth-child(1){
+    transform: rotate(-45deg);
   }
   
   .search-bar {
-    background-color: transparent;
-    width: 164px;
-    height: 45px;
-    border: 2px solid #ffffff;
-    border-radius: 40px;
-    padding-left: 22px;
+    display: none;
   }
   
   .search-bar::placeholder {
-    color: #ffffff;
+   display: none;
   }
   
   .search-icon {
-    position: absolute;
-    width: 26px;
-    height: 27px;
-    top: 12px;
-    right: 20px;
+    display: none;
   }
   
   .bell-icon {
-    display: inline-block;
-    width: 82px;
-    height: auto;
-    transition: width, 0.15s;
-    transition: height, 0.15s;
-  }
-  
-  .bell-icon:hover{
-    cursor: pointer;
-    width: 92px;
-    height: auto;
+    display: none;
   }
   
   .account-section {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      rgba(15, 13, 41, 0.8);
-    width: 340px;
-    height: 112px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    background: none;
+    height: 100%;
     order: 3;
   }
   
-  .account-text, .line {
+  .anonymus {
+    display: none;
+  }
+  
+  .account-text {
+   display: none;
+  }
+  
+  .line {
     display: none;
   }
   
   .account-button {
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 80px;
-    height: 75px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    transition: background-color, 0.15s;
-    transition: opacity, 0.15s;
-  }
-  
-  .account-button:hover{
-    cursor: pointer;
-    background-color: #1A263F;
+    width: 40px;
+    height: 38px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
   }
   
   .account-icon {
-    width: 39px;
-    height: 65px;
+    width: 20px;
+    height: 24px;
   }
 }
