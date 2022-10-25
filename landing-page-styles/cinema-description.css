@@ -51,10 +51,19 @@
     margin-left: 155px;
 }
 
-.main-circle{
-    border-radius: 50%;
+.video-left{
     width: 400px;
     height: 400px;
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    -webkit-transform: rotate(0.000001deg); 
+    -webkit-border-radius: 100%; 
+    -moz-border-radius: 100%;
+}
+   
+.video-circle {
+    border-radius: 50%;
+    object-position: center;
     object-fit: cover;
 }
 
@@ -177,11 +186,14 @@
     margin-bottom: 24px;
 }
 
-.right-circle{
-    border-radius: 50%;
+.video-right{
     width: 400px;
     height: 400px;
-    object-fit: cover;
+    border-radius: 100%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    -webkit-transform: rotate(0.000001deg); 
+    -webkit-border-radius: 100%; 
+    -moz-border-radius: 100%;
     margin-right: 140px;
 }
 
@@ -239,12 +251,24 @@
         margin: 0px;
     }
     
-    .main-circle{
+    .video-left{
+        width: 170px;
+        height: 170px;
         border-radius: 50%;
-        width: 166px;
-        height: 166px;
+        -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        -webkit-transform: rotate(0.000001deg); 
+        -webkit-border-radius: 100%; 
+        -moz-border-radius: 100%;
+    }
+       
+    .video-circle {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-position: center;
         object-fit: cover;
     }
+    
     
     .logo-circle{
         width: 55px;
@@ -365,13 +389,14 @@
         margin-bottom: 9px;
     }
     
-    .right-circle{
-        border-radius: 50%;
-        width: 166px;
-        height: 166px;
-        object-fit: cover;
-        order: 1;
-        margin-right: 0px;
-        margin-top: 15px;
+    .video-right{
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+        -webkit-transform: rotate(0.000001deg); 
+        -webkit-border-radius: 100%; 
+        -moz-border-radius: 100%;
+        margin: 0;
     }
 }

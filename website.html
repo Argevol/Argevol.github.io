@@ -393,7 +393,9 @@
                   <img class="background-photo" src="images/back-photo-1.svg" alt="back-photo-1" />
                   <div class="upper-fog">
                     <div class="left-circles">
-                      <img class="main-circle" src="images/temporary-1.svg" alt="back-video" />
+                      <div class="video-circle">
+                        <video src="videos/cinema-video-left.mp4" id="localVideoStream"  class="video-circle" width="400" height="400" autoplay muted loop></video>
+                        </div>
                     <img class="logo-circle" src="images/logo-circle.svg" alt="logo-circle" />
                   </div>
                   <div class="right-part">
@@ -436,7 +438,9 @@
                         </button>
                       </form>
                     </div>
-                      <img class="right-circle" src="images/temporary-2.svg" alt="temporary-2" />
+                    <div class="video-right">
+                      <video src="videos/cinema-video-right.mp4" id="localVideoStream"  class="video-circle" width="400" height="400" autoplay muted loop></video>
+                      </div>
                   </div>
                   </div>
               <div class="lower-partition"></div>
@@ -600,14 +604,10 @@
             </form>
             </div>
           </div>
-          <div class="form">
+          <form class="form-contacts" action="pages/contacts.html" method="get">
             <span class="form-text">Форма для зв'язку</span>
-            <form class="cinema-button-text" action="" method="get">
-              <button class="form-button">
-                Заповнити
-              </button>
-            </form>
-          </div>
+            <button class="form-button">Заповнити</button>
+          </form>
         </div>
       </div>
     </div>
