@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Maksym Danyliuk" />
+    <meta name="description" content="Raven Cinema form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" href="icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="landing-page-styles/contacts.css">
+    <link rel="stylesheet" href="landing-page-styles/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <main class="contacts-page">
+    <div class="contacts-container">
+      <div class="contacts-wrapper">
+        <div class="contacts-partition"></div>
+        <div class="contacts-upper-part">
+          <div class="contacts-section-title">
+            <img class="question-icon" src="icons/question.svg" alt="question-icon">
+            <span class="contacts-section-text">
+              Маєте питання/пропозиції?
+            </span>
+          </div>
+          <div class="horizontal-contacts-line"></div>
+        </div>
+        <div class="contact-columns">
+          <form class="contact-form">
+            <fieldset class="fieldset-contact">
+              <legend class="legend-text">Напишіть нам!</legend>
+              <div class="user-information">
+                <div class="full-name-block">
+                  <label class="full-name-text" for="full-name">Повне ім'я</label>
+                  <input type="text" id="full-name" name="full-name" placeholder="Введіть ваше ім'я...">
+                </div>
+                <div class="email-block">
+                  <label class="email-text" for="email">Пошта</label>
+                  <input type="email" id="email" name="email" placeholder="Введіть вашу пошту...">
+                </div>
+              </div>
+              <div class="subject-block">
+                <label class="subject-text" for="subject">Тема</label>
+                <input type="text" id="subject" name="subject" placeholder="Введіть тему листа...">
+              </div>
+              <div class="message-block">
+                <label class="message-text" for="message">Повідомлення</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Введіть ваше повідомлення..."></textarea>
+              </div>
+              <div class="submit">
+                <input class="submit-button" type="button" value="Відправити">
+              </div>
+            </fieldset>
+          </form>
+          <div class="contact-phone-form">
+            <span class="phone-to-us">Або ж зателефонуйте нам!</span>
+            <img class="phone-icon" src="icons/phone.svg" alt="phone-icon">
+            <div class="work-time">
+              <span class="days">Понеділок - П’ятниця</span>
+              <span class="hours">24 години на добу</span>
+            </div>
+            <div class="phone-numbers">
+              <span class="phone-number">(066) 992 0000</span>
+              <span class="phone-number">(096) 050 5051</span>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-partition"></div>
+      </div>
+    </div>
+  </main>  
+</body>
+</html>
